@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wjm0017_lab1c_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="war eagle" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-z4-P4D">
+                                <rect key="frame" x="57" y="50" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="VZ8-U2-pmk"/>
+                                    <constraint firstAttribute="height" constant="300" id="gHt-kT-a7x"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hXn-U2-Cd9">
+                                <rect key="frame" x="94.333333333333329" y="428" width="225.33333333333337" height="31"/>
+                                <connections>
+                                    <action selector="logoSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="z59-PH-bE3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQy-5l-aFR">
+                                <rect key="frame" x="57" y="430" width="28" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-ne-gVe">
+                                <rect key="frame" x="329" y="430" width="28" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ew" translatesAutoresizingMaskIntoConstraints="NO" id="L3G-KG-d1c">
+                                <rect key="frame" x="57" y="50" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299.99999999999983" id="Mn7-Xe-KPd"/>
+                                    <constraint firstAttribute="height" constant="300" id="kjy-tc-qlq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XQy-5l-aFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="AZG-rq-e1O"/>
+                            <constraint firstItem="hXn-U2-Cd9" firstAttribute="top" secondItem="5tE-z4-P4D" secondAttribute="bottom" constant="78" id="Fmq-qa-5AL"/>
+                            <constraint firstItem="L3G-KG-d1c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J2g-Jo-ko8"/>
+                            <constraint firstItem="L3G-KG-d1c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50.000000000000114" id="Rub-WU-CD8"/>
+                            <constraint firstItem="5tE-z4-P4D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T3z-m2-89x"/>
+                            <constraint firstItem="2eq-ne-gVe" firstAttribute="leading" secondItem="hXn-U2-Cd9" secondAttribute="trailing" constant="11.333333333333314" id="U1G-hE-qJX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2eq-ne-gVe" secondAttribute="trailing" constant="57" id="cOX-oU-h2v"/>
+                            <constraint firstItem="XQy-5l-aFR" firstAttribute="top" secondItem="5tE-z4-P4D" secondAttribute="bottom" constant="80" id="moU-UQ-JiP"/>
+                            <constraint firstItem="hXn-U2-Cd9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vIc-Md-teV"/>
+                            <constraint firstItem="5tE-z4-P4D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vKf-WB-T3H"/>
+                            <constraint firstItem="2eq-ne-gVe" firstAttribute="top" secondItem="5tE-z4-P4D" secondAttribute="bottom" constant="80" id="vj0-wO-JEv"/>
+                            <constraint firstItem="hXn-U2-Cd9" firstAttribute="leading" secondItem="XQy-5l-aFR" secondAttribute="trailing" constant="11.298131067827171" id="xV7-An-aON"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="auburnView" destination="5tE-z4-P4D" id="L5t-cC-hSf"/>
+                        <outlet property="ewView" destination="L3G-KG-d1c" id="1B7-2F-bOc"/>
+                        <outlet property="slider" destination="hXn-U2-Cd9" id="f1o-pB-if8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ew" width="75" height="75"/>
+        <image name="war eagle" width="233.33332824707031" height="233.33332824707031"/>
+    </resources>
+</document>
